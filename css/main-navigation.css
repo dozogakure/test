@@ -1,0 +1,133 @@
+.main-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+@media(max-width:991px){
+    .main-navigation_logo-image{
+        width: 40px;
+        margin-right: 10px;
+    }
+}
+.main-navigation_logo-image{
+    width: 70px;
+    margin-right: 20px;
+}
+
+.main-nagivation_social-icon{
+    width: 16px;
+}
+
+.main-navigation_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+@media(max-width:991px){
+    .main-navigation_logo-link{
+        font-size: 28px;
+    } 
+}
+.main-navigation_logo-link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+@media(max-width:991px){
+    .main-navigation_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+}
+@media(max-width:991px){
+    .main-navigation_menu--open {
+     opacity: 1;
+     pointer-events: unset;
+     transform: unset;
+    }
+}
+.main-navigation_menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s;
+    transition-property: opacity, transform;
+}
+
+.main-navigation_menu-item {
+    margin-left: 40px;
+    padding: 5px 0;
+    
+}
+@media(max-width: 1199px) {
+    .main-navigation_menu-item{
+        margin-left: 30px;
+    }
+}
+@media(max-width:991px){
+    .main-navigation_link{
+        font-size: 25px;
+    }
+
+}
+@media(max-width:991px){
+    .main-navigation_menu-item{
+        margin-left: 0;
+
+    }
+}
+@media(max-width:991px){
+    .main-navigation_menu-item:hover{
+        border-bottom: unset;
+
+    }
+}
+.main-navigation_link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-navigation_menu-item:hover {
+    border-bottom: 2px solid white;
+    
+}
+
+
+.main-navigation_mobile-button{
+    display: none;
+}
+
+@media(max-width:991px){
+    .main-navigation_mobile-button{
+        display: unset;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+}
+@media(max-width:991px){
+    .main-navigation_mobile-button-image{
+     width: 25px;
+     display: block;
+    }
+}

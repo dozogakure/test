@@ -16,15 +16,78 @@
     <link href="/css/main-banner.css" rel="stylesheet">
     <link href="/css/container.css" rel="stylesheet">
     <link href="/css/about-us.css" rel="stylesheet">
+    <link href="/css/main-navigation.css" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="main-navigation">
+        <div class="main-navigation_inner">
+            <div class="main-navigation_logo">
+                <a href="#" class="main-navigation_logo-link">
+                    <img src="/images/logo.svg" alt="logo" class="main-navigation_logo-image">
+                    Polskie Smaki
+                </a>
+            </div>
+            <ul class="main-navigation_menu js-main-navigation_menu">
+                <li class="main-navigation_menu-item">
+                    <a href="#" class="main-navigation_link">
+                        Home
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#about-us" class="main-navigation_link">
+                        O nas
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#menu" class="main-navigation_link">
+                        Menu
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#gallery" class="main-navigation_link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#contact" class="main-navigation_link">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#map" class="main-navigation_link">
+                       Jak dojechać
+                    </a>
+                </li>
+                
+                <li class="main-navigation_menu-item">
+                    <a href="#" class="main-navigation_link">
+                        Home
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="https://instagram.com" target="blank" class="main-navigation_link">
+                        <img src="/images/icons/social/instagram.svg" alt="instagram" class="main-nagivation_social-icon">
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="https://facebook.com" target="blank" class="main-navigation_link">
+                        <img src="/images/icons/social/facebook.svg" alt="facebook" class="main-nagivation_social-icon">
+                    </a>
+                </li>
+            </ul>
+            <button class="main-navigation_mobile-button js-main-navigation_mobile-button">
+                <img src="/images/icons/navigation.svg" alt="otwórz/zamknij nawigację" class="main-navigation_mobile-button-image">
+            </button>
+        </div>
+    </nav>
+        <script src="/js/main-navigation.js"></script>
     <section class="main-banner">
         <a href="#about-us" class="main-banner_button">
             Poznaj nas lepiej
         </a>
     </section>
-    <div class="container">
+    <div class="container" id="about-us">
         <section class="about-us">
             <div class="about-us_text">
                 <h3 class="about-us_header">NIE JESTEŚMY TYLKO RESTAURACJĄ</h3>
