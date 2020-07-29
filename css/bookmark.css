@@ -35,16 +35,16 @@
     z-index: -1;
 }
 
-@media(max-width:1199px) {
-    .bookmark_header {
-        font-size: 5vw;
-    }
-}
-
 .bookmark_header {
     font-size: 120px;
     text-transform: uppercase;
     margin: 0;
+}
+
+@media(max-width: 1199px) {
+    .bookmark_header {
+        font-size: 10vw;
+    }
 }
 
 .bookmark_header::after,
