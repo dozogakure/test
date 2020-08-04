@@ -16,6 +16,7 @@
     <link href="/css/bookmark.css" rel="stylesheet">
     <link href="/css/menu.css" rel="stylesheet">
     <link href="/css/gallery.css" rel="stylesheet">
+    <link href="/css/contact-form.css" rel="stylesheet">
 </head>
 
 <body>
@@ -356,6 +357,32 @@
         <h2 class="bookmark_header"> Kontakt </h2>
         <p class="bookmark_description">Porozmawiaj z nami lub zarezerwuj stolik</p>
     </section>
+    <form class="contact-form">
+        <div class="container container--smaller">
+
+            <div class="contact-form__info">
+                <div class="contact-form__info-item">
+                    <img src="/images/icons/envelope.svg" alt="e-mail" class="contact-form__info-icon">
+                    <a href="mailto:mslewandowski@interia.pl" class="contact-form__info-link">mslewandowski@interia.pl</a>
+                </div>
+                <div class="contact-form__info-item">
+                    <img src="/images/icons/phone.svg" alt="Telefon" class="contact-form__info-icon">
+                    <a href="tel:1234567890" class="contact-form__info-link">123 456 789</a>
+                </div>
+            </div>
+            <p class="contact-form__header">
+                Jeśli nie znalazłeś na naczej stronie informacji, których potrzebujesz,<br> wyślij formularz kontaktowy lub zadzwoń. <br> Chętnie z Tobą porozmawiamy i odpowiemy na wszystkie pytania.
+            </p>
+            <div class="contact-form__fields">
+                <input name="name" class="contact-form__field" required placeholder="Imię i Nazwisko">
+                <input name="email" type="email" class="contact-form__field" required placeholder="Adres e-mail">
+                <textarea placeholder="Treść wiadomośći" class="contact-form__field contact-form__field--full-row" name="content" required rows="10"></textarea>
+            </div>
+            <button class="contact-form__submit-button">Wyślij</button>
+
+
+        </div>
+    </form>
     <section class="bookmark bookmark--route" id="map">
         <h2 class="bookmark_header"> Jak dojechać </h2>
         <p class="bookmark_description">Łatwo nasz znajdziesz</p>
