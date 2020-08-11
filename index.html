@@ -359,7 +359,7 @@
         <h2 class="bookmark_header"> Kontakt </h2>
         <p class="bookmark_description">Porozmawiaj z nami lub zarezerwuj stolik</p>
     </section>
-    <form class="contact-form">
+    <form method="post" class="contact-form" action="mail.php">
         <div class="container container--smaller">
 
             <div class="contact-form__info">
@@ -376,9 +376,9 @@
                 Jeśli nie znalazłeś na naczej stronie informacji, których potrzebujesz,<br> wyślij formularz kontaktowy lub zadzwoń. <br> Chętnie z Tobą porozmawiamy i odpowiemy na wszystkie pytania.
             </p>
             <div class="contact-form__fields">
-                <input name="name" class="contact-form__field" required placeholder="Imię i Nazwisko">
-                <input name="email" type="email" class="contact-form__field" required placeholder="Adres e-mail">
-                <textarea placeholder="Treść wiadomośći" class="contact-form__field contact-form__field--full-row" name="content" required rows="10"></textarea>
+                <input name="name" id="name" class="contact-form__field" required placeholder="Imię i Nazwisko">
+                <input name="email" type="email" class="contact-form__field" id="email" required placeholder="Adres e-mail">
+                <textarea placeholder="Treść wiadomośći" class="contact-form__field contact-form__field--full-row" name="message" id="message" required rows="10"></textarea>
             </div>
             <button class="contact-form__submit-button">Wyślij</button>
 
